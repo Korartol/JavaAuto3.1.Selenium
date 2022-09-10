@@ -41,9 +41,6 @@ public class CallBackTest {
 
         elements.get(0).sendKeys("Иван Петров");
         elements.get(1).sendKeys("+79211231223");
-
-        //driver.findElement().sendKeys("Иван Петров");
-        //driver.findElement().sendKeys("+79211231223");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.className("button__text")).click();
         String text = driver.findElement(By.className("Success_successBlock__2L3Cw")).getText();
